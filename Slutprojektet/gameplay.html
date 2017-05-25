@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <link href="css.css" rel="stylesheet" type="text/css">
+      <link href="Slider.js" rel="stylesheet" type="text/javascript">
+      <link href="SlideRight.js" rel="stylesheet" type="text/javascript">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.7/hammer.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <title>Home</title>
+      <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <![endif]-->
+   </head>
+   <body>
+      <div class="navphone">
+         <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">       	
+               <a href="index.html">Home</a>
+               <a href="gameplay.html">Gameplay</a>
+               <a href="roles.html">Roles</a>
+               <a href="skins.html">Skins</a>
+               <a href="achievements.html">Achievements</a>
+               <a href="gamemodes.html">Game Modes</a>
+            </div>
+         </div>
+         <span id="navSpan" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+         <script>
+            function openNav() {
+            	document.getElementById("myNav").style.height = "100%";
+            }
+            
+            function closeNav() {
+            	document.getElementById("myNav").style.height = "0%";
+            }
+         </script>
+      </div>
+      <div id="phonefix">
+         <div id="storbox">
+            <nav class="navgradient">
+               <ul>
+                  <li><a href="index.html"><span>Town of Salem</span></a></li>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="gameplay.html">Gameplay</a></li>
+                  <li><a href="roles.html">Roles</a></li>
+                  <li><a href="skins.html">Skins</a></li>
+                  <li><a href="achievements.html">Achievements</a></li>
+                  <li><a href="gamemodes.html">Game Modes</a></li>
+               </ul>
+            </nav>
+            <article>
+               <div id="translayer">
+                  <section class="hero">
+                     <div class="content">
+                        <div id="mobileframe">
+                           <iframe src="https://www.youtube.com/embed/sII9ntisxOI" allowfullscreen></iframe>
+                        </div>
+                        <h3>
+                           <p>
+                              There are currently 33 roles in Town of Salem, separated into 3 categories: Town, Mafia, and Neutral . These include 7 unique roles. These roles themselfes have very unique abilities that makes them good and bad at certain actions. <br><br>The 15 Town roles each have one goal: "Lynch every criminal and evildoer." Those include the Mafia, Neutral Killing, Vampires, and Witches. More indepth information about this matter can be in the "Roles" tab.<br><br> The 9 Neutral roles each have different goals, and some of those are compatible with the goals of the other teams, meaning that some of these roles are able to win alongside them. It's worth checking the goal descriptions to see who you can potentially ally with as a Neutral.
+                           </p>
+                        </h3>
+                     </div>
+                  </section>
+                  <div id="iframefix">
+                     <div id="playnow">
+                        <a class="btn play" target="_blank" href="http://www.blankmediagames.com/TownOfSalem/">Play Now</a>	    
+                     </div>
+                     <iframe src="https://www.youtube.com/embed/sII9ntisxOI" allowfullscreen></iframe> 
+                  </div>
+                  <div class="slidersparent">
+                     <div class="has-slider">
+                        <div class="slider">
+                           <div class="slider-panel">
+                              <p>
+                                 There are currently 33 roles in Town of Salem, separated into 3 categories: Town, Mafia, and Neutral . These include 7 unique roles. These roles themselfes have very unique abilities that makes them good and bad at certain actions.
+                              </p>
+                           </div>
+                           <div class="slider-panel">
+                              <p>
+                                 The 15 Town roles each have one goal: "Lynch every criminal and evildoer." Those include the Mafia, Neutral Killing, Vampires, and Witches. More indepth information about this matter can be in the "Roles" tab. 
+                              </p>
+                           </div>
+                           <div class="slider-panel">
+                              <p>
+                                 The 9 Neutral roles each have different goals, and some of those are compatible with the goals of the other teams, meaning that some of these roles are able to win alongside them. It's worth checking the goal descriptions to see who you can potentially ally with as a Neutral.
+                              </p>
+                           </div>
+                        </div>
+                        <div class="slider-pagination"></div>
+                     </div>
+                     <div class="blockImage">
+                        <img src="arsoslider.png" alt="Arso" class="historyImage">
+                     </div>
+                  </div>
+               </div>
+            </article>
+            <footer class="footgradient">
+            </footer>
+         </div>
+      </div>
+      <script src="Slider.js"></script>	
+      <script src="SlideRight.js"></script>	
+   </body>
+</html>

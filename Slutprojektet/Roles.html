@@ -1,0 +1,535 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <link href="css.css" rel="stylesheet" type="text/css">
+      <link href="Slider.js" rel="stylesheet" type="text/javascript">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.7/hammer.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <title>Home</title>
+      <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <![endif]-->
+   </head>
+   <body>
+      <div class="navphone">
+         <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">       	
+               <a href="index.html">Home</a>
+               <a href="gameplay.html">Gameplay</a>
+               <a href="roles.html">Roles</a>
+               <a href="skins.html">Skins</a>
+               <a href="achievements.html">Achievements</a>
+               <a href="gamemodes.html">Game Modes</a>
+            </div>
+         </div>
+         <span id="navSpan" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+         <script>
+            function openNav() {
+            	document.getElementById("myNav").style.height = "100%";
+            }
+            
+            function closeNav() {
+            	document.getElementById("myNav").style.height = "0%";
+            }
+         </script>
+      </div>
+      <div id="storbox">
+         <nav class="navgradient">
+            <ul>
+               <li><a href="index.html"><span>Town of Salem</span></a></li>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="gameplay.html">Gameplay</a></li>
+               <li><a href="roles.html">Roles</a></li>
+               <li><a href="skins.html">Skins</a></li>
+               <li><a href="achievements.html">Achievements</a></li>
+               <li><a href="gamemodes.html">Game Modes</a></li>
+            </ul>
+         </nav>
+         <article>
+            <div id="translayer">
+               <h1 class="blackwoods">Town Roles</h1>
+               <div id="poscont">
+                  <div class="container">
+                     <img src="Bodyguard.png" alt="Bodyguard" class="image">
+                     <div class="overlay">
+                        <div class="text">
+                           <span style="color:#ffcc00;font-weight:bold">Alignment:</span> Town (Protective)<br><br>		
+                           <span style="color:#ffcc00;font-weight:bold">Abilities:</span> Protect one person from death each night.<br><br>	
+                           <span style="color:#ffcc00;font-weight:bold">Attributes:</span>
+                           If your target is attacked, both you and your attacker will die instead.
+                           If you successfully protect someone, you can't be saved from death.
+                           Your counterattack ignores night immunity.<br><br>	
+                           <span style="color:#ffcc00;font-weight:bold">Goal:</span> Lynch every criminal and evildoer.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="container">
+                     <img src="Investigator.png" alt="Investigator" class="image">
+                     <div class="overlay">
+                        <div class="text">
+                           <span style="color:#ffcc00;font-weight:bold">Alignment:</span> Town (Investigative)<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Abilities:</span>
+                           Investigate one person each night for a clue to their role.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Attributes:</span>
+                           None<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Goal:</span> Lynch every criminal and evildoer.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="container">
+                     <img src="Lookout.png" alt="Lookout" class="image">
+                     <div class="overlay">
+                        <div class="text">
+                           <span style="color:#ffcc00;font-weight:bold">Alignment:</span> Town (Investigative)<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Abilities:</span>
+                           Watch one person at night to see who visits them.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Attributes:</span>
+                           None<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Goal:</span> Lynch every criminal and evildoer.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="container">
+                     <img src="Sheriff.png" alt="Sheriff" class="image">
+                     <div class="overlay">
+                        <div class="text">
+                           <span style="color:#ffcc00;font-weight:bold">Alignment:</span> Town (Investigative)<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Abilities:</span>
+                           Check one person each night for suspicious activity.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Attributes:</span>
+                           You will know if your target is a member of the Mafia, except for the Godfather.
+                           You will know if your target is a Serial Killer.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Goal:</span> Lynch every criminal and evildoer.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="container">
+                     <img src="Spy.png" alt="Spy" class="image">
+                     <div class="overlay">
+                        <div class="text">
+                           <span style="color:#ffcc00;font-weight:bold">Alignment:</span> Town (Investigative)<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Abilities:</span>
+                           You can secretly listen to the Mafia at night.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Attributes:</span>
+                           You can hear private messages.
+                           You will know who the Mafia visit at night.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Goal:</span> Lynch every criminal and evildoer.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="container">
+                     <img src="Jailor.png" alt="Jailor" class="image">
+                     <div class="overlay">
+                        <div class="text">
+                           <span style="color:#ffcc00;font-weight:bold">Alignment:</span> Town (Killing)<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Abilities:</span>
+                           You may choose one person during the day to jail for the night.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Attributes:</span>
+                           You may anonymously talk with your prisoner.
+                           You may choose to execute your prisoner.
+                           The jailed target cannot perform their night ability.
+                           While jailed the prisoner is safe from all attacks.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Goal:</span> Lynch every criminal and evildoer.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="container">
+                     <img src="Vampirehunter.png" alt="Vampire Hunter" class="image">
+                     <div class="overlay">
+                        <div class="text">
+                           <span style="color:#ffcc00;font-weight:bold">Alignment:</span> Town (Killing)<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Abilities:</span>
+                           Check for Vampires each night.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Attributes:</span>
+                           If you find a Vampire you will stake them in the heart.
+                           If a Vampire visits you they will be staked.
+                           You can hear Vampires at night.
+                           If you kill all Vampires you will become a Vigilante.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Goal:</span>Lynch every criminal and evildoer.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="container">
+                     <img src="Veteran.png" alt="Veteran" class="image">
+                     <div class="overlay">
+                        <div class="text">
+                           <span style="color:#ffcc00;font-weight:bold">Alignment:</span> Town (Killing)<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Abilities:</span>
+                           Decide if you will go on alert.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Attributes:</span>
+                           While on alert you can not be killed at night.
+                           If anyone visits you while you are on alert they will be shot.
+                           You can only go on alert 3 times.
+                           You are immune to role blocks.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Goal:</span> Lynch every criminal and evildoer.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="container">
+                     <img src="Vigilante.png" alt="Vigilante" class="image">
+                     <div class="overlay">
+                        <div class="text">
+                           <span style="color:#ffcc00;font-weight:bold">Alignment:</span> Town (Killing)<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Abilities:</span>
+                           Choose to take justice into your own hands and shoot someone.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Attributes:</span>
+                           If you shoot another Town member you will commit suicide over the guilt.
+                           You can only shoot your gun 3 times.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Goal:</span> Lynch every criminal and evildoer.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="container">
+                     <img src="Doctor.png" alt="Doctor" class="image">
+                     <div class="overlay">
+                        <div class="text">
+                           <span style="color:#ffcc00;font-weight:bold">Alignment:</span> Town (Protective)<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Abilities:</span>
+                           Heal one person each night, preventing them from dying.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Attributes:</span>
+                           You may only heal yourself once.
+                           You will know if your target is attacked.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Goal:</span> Lynch every criminal and evildoer.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="container">
+                     <img src="Escort.png" alt="Escort" class="image">
+                     <div class="overlay">
+                        <div class="text">
+                           <span style="color:#ffcc00;font-weight:bold">Alignment:</span> Town (Support)<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Abilities:</span>
+                           Distract someone each night.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Attributes:</span>
+                           Distraction blocks your target from using their role's night ability.
+                           You are immune to role blocks.
+                           If you target a Serial Killer, they will attack you.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Goal:</span> Lynch every criminal and evildoer.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="container">
+                     <img src="Mayor.png" alt="Mayor" class="image">
+                     <div class="overlay">
+                        <div class="text">
+                           <span style="color:#ffcc00;font-weight:bold">Alignment:</span> Town (Support)<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Abilities:</span>
+                           You may reveal yourself as the Mayor of the Town.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Attributes:</span>
+                           Once you have revealed yourself as the Mayor your vote counts as 3 votes.
+                           You may not be healed once you have revealed.
+                           Once revealed you can't whisper, or be whispered to.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Goal:</span> Lynch every criminal and evildoer.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="container">
+                     <img src="Medium.png" alt="Medium" class="image">
+                     <div class="overlay">
+                        <div class="text">
+                           <span style="color:#ffcc00;font-weight:bold">Alignment:</span> Town (Support)<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Abilities:</span>
+                           Speak with a dead person at night.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Attributes:</span>
+                           You will speak to your target anonymously.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Goal:</span> Lynch every criminal and evildoer.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="container">
+                     <img src="Retributionist.png" alt="Retributionist" class="image">
+                     <div class="overlay">
+                        <div class="text">
+                           <span style="color:#ffcc00;font-weight:bold">Alignment:</span> Town (Support)<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Abilities:</span>
+                           You may revive a dead Town member.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Attributes:</span>
+                           You may only resurrect one person.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Goal:</span> Lynch every criminal and evildoer.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="container">
+                     <img src="Transporter.png" alt="Transporter" class="image">
+                     <div class="overlay">
+                        <div class="text">
+                           <span style="color:#ffcc00;font-weight:bold">Alignment:</span> Town (Support)<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Abilities:</span>
+                           Choose two people to transport at night.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Attributes:</span>
+                           Transporting two people swaps all targets against them.
+                           You may transport yourself.
+                           Your targets will know they were transported.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Goal:</span> Lynch every criminal and evildoer.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="container">
+                     <img src="Survivor.png" alt="Survivor" class="image">
+                     <div class="overlay">
+                        <div class="text">
+                           <span style="color:#ffcc00;font-weight:bold">Alignment:</span> Neutral (Benign)<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Abilities:</span>
+                           Put on a bulletproof vest at night, protecting you from attacks.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Attributes:</span>
+                           You can only use the bulletproof vest 4 times.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Goal:</span> Live to the end of the game.
+                        </div>
+                     </div>
+                  </div>
+                  <h1 class="blackwoods2">Mafia Roles</h1>
+                  <div class="container">
+                     <img src="Godfather.png" alt="Godfather" class="image">
+                     <div class="overlay">
+                        <div class="text">
+                           <span style="color:#ffcc00;font-weight:bold">Alignment:</span> Mafia (Killing)<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Abilities:</span>
+                           Kill someone each night.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Attributes:</span>
+                           You can't be killed at night.
+                           If there is a Mafioso he will attack the target instead of you.
+                           You will appear to be a Town member to the Sheriff.
+                           You can talk with the other Mafia at night.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Goal:</span> Kill anyone that will not submit to the Mafia.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="container">
+                     <img src="Janitor.png" alt="Janitor" class="image">
+                     <div class="overlay">
+                        <div class="text">
+                           <span style="color:#ffcc00;font-weight:bold">Alignment:</span> Mafia (Deception)<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Abilities:</span>
+                           Choose a person to clean at night.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Attributes:</span>
+                           If your target dies their role and last will won't be revealed to the town.
+                           Only you will see the cleaned targets role and last will.
+                           You may only perform 3 cleanings.
+                           If there are no kill capable Mafia roles left you will become a Mafioso.
+                           You can talk with the other Mafia at night.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Goal:</span> Kill anyone that will not submit to the Mafia.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="container">
+                     <img src="Forger.png" alt="Forger" class="image">
+                     <div class="overlay">
+                        <div class="text">
+                           <span style="color:#ffcc00;font-weight:bold">Alignment:</span> Mafia (Deception)<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Abilities:</span>
+                           Choose a person and rewrite their last will at night.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Attributes:</span>
+                           If your target dies their last will is replaced with your forgery.
+                           You may only perform 3 forgeries.
+                           If there are no kill capable Mafia roles left you will become a Mafioso.
+                           You can talk with the other Mafia at night.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Goal:</span> Kill anyone that will not submit to the Mafia.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="container">
+                     <img src="Framer.png" alt="Framer" class="image">
+                     <div class="overlay">
+                        <div class="text">
+                           <span style="color:#ffcc00;font-weight:bold">Alignment:</span> Mafia (Deception)<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Abilities:</span>
+                           Choose someone to frame at night.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Attributes:</span>
+                           If your target is investigated they will appear to be a member of the Mafia.
+                           If there are no kill capable Mafia roles left you will become a Mafioso.
+                           You can talk with the other Mafia at night.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Goal:</span> Kill anyone that will not submit to the Mafia.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="container">
+                     <img src="Disguiser.png" alt="Disguiser" class="image">
+                     <div class="overlay">
+                        <div class="text">
+                           <span style="color:#ffcc00;font-weight:bold">Alignment:</span> Mafia (Deception)<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Abilities:</span>
+                           Choose a target to disguise yourself as.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Attributes:</span>
+                           You will appear to be the role of your target to the Investigator.
+                           If you are killed you will appear to be the role of your target.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Goal:</span> Kill anyone that will not submit to the Mafia.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="container">
+                     <img src="Mafioso.png" alt="Mafioso" class="image">
+                     <div class="overlay">
+                        <div class="text">
+                           <span style="color:#ffcc00;font-weight:bold">Alignment:</span> Mafia (Killing)<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Abilities:</span>
+                           Carry out the Godfather's orders.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Attributes:</span>
+                           You can kill if the Godfather doesn't give you orders.
+                           If the Godfather dies you will become the next Godfather.
+                           You can talk with the other Mafia at night.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Goal:</span> Kill anyone that will not submit to the Mafia.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="container">
+                     <img src="Blackmailer.png" alt="Blackmailer" class="image">
+                     <div class="overlay">
+                        <div class="text">
+                           <span style="color:#ffcc00;font-weight:bold">Alignment:</span> Mafia (Support)<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Abilities:</span>
+                           Choose one person each night to blackmail.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Attributes:</span>
+                           Blackmailed targets can not talk during the day.
+                           If there are no kill capable Mafia roles left you will become a Mafioso.
+                           You can talk with the other Mafia at night.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Goal:</span> Kill anyone that will not submit to the Mafia.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="container">
+                     <img src="Consigliere.png" alt="Consigliere" class="image">
+                     <div class="overlay">
+                        <div class="text">
+                           <span style="color:#ffcc00;font-weight:bold">Alignment:</span> Mafia (Support)<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Abilities:</span>
+                           Check one person for their exact role each night.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Attributes:</span>
+                           If there are no kill capable Mafia roles left you will become a Mafioso.
+                           You can talk with the other Mafia at night.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Goal:</span> Kill anyone that will not submit to the Mafia.
+                        </div>
+                     </div>
+                  </div>
+                  <h1 class="blackwoods3">Neutral Roles</h1>
+                  <div class="container">
+                     <img src="Arsonist.png" alt="Arsonist" class="image">
+                     <div class="overlay">
+                        <div class="text">
+                           <span style="color:#ffcc00;font-weight:bold">Alignment:</span> Neutral (Killing)<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Abilities:</span>
+                           Douse someone in gasoline or ignite all doused targets.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Attributes:</span>
+                           Targets will know that they are doused in gasoline.
+                           Death from fire can't be prevented by healing or night immunities.
+                           Select yourself to ignite doused people.
+                           You can take no action to undouse yourself.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Goal:</span> Live to see everyone burn.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="container">
+                     <img src="SerialKiller.png" alt="SerialKiller" class="image">
+                     <div class="overlay">
+                        <div class="text">
+                           <span style="color:#ffcc00;font-weight:bold">Alignment:</span> Neutral (Killing)<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Abilities:</span>
+                           Kill someone each night.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Attributes:</span>
+                           If you are role blocked you will attack the role blocker instead of your target.
+                           You can not be killed at night.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Goal:</span> Kill everyone who would oppose you.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="container">
+                     <img src="Amnesiac.png" alt="Amnesiac" class="image">
+                     <div class="overlay">
+                        <div class="text">
+                           <span style="color:#ffcc00;font-weight:bold">Alignment:</span> Neutral (Benign)<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Abilities:</span>
+                           Remember who you were by selecting a graveyard role.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Attributes:</span>
+                           When you choose a role it will be revealed to the Town.
+                           You can't choose a unique role.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Goal:</span> Remember who you were and complete that roles objectives.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="container">
+                     <img src="Jester.png" alt="Jester" class="image">
+                     <div class="overlay">
+                        <div class="text">
+                           <span style="color:#ffcc00;font-weight:bold">Alignment:</span> Neutral (Evil)<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Abilities:</span>
+                           Trick the Town into voting against you.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Attributes:</span>
+                           If you are lynched you may kill one of your guilty voters the following night.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Goal:</span> Get yourself lynched by any means necessary.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="container">
+                     <img src="Vampire.png" alt="Vampire" class="image">
+                     <div class="overlay">
+                        <div class="text">
+                           <span style="color:#ffcc00;font-weight:bold">Alignment:</span> Neutral (Chaos)<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Abilities:</span>
+                           Convert others to Vampires at night.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Attributes:</span>
+                           Vampires vote at night to bite a target.
+                           The youngest Vampire will visit the target at night.
+                           You must wait 1 night between conversions.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Goal:</span> Convert everyone who would oppose you.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="container">
+                     <img src="Werewolf.png" alt="Werewolf" class="image">
+                     <div class="overlay">
+                        <div class="text">
+                           <span style="color:#ffcc00;font-weight:bold">Alignment:</span> Neutral (Killing)<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Abilities:</span>
+                           Transform into a Werewolf during the full moon.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Attributes:</span>
+                           As a Werewolf you can not be killed at night.
+                           As a Werewolf you will attack your victim and anyone that visits them.
+                           Your attack goes through night immunity.
+                           As a Werewolf you may choose to stay home and attack anyone who visits you.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Goal:</span> Kill everyone who would oppose you.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="container">
+                     <img src="Witch.png" alt="Witch" class="image">
+                     <div class="overlay">
+                        <div class="text">
+                           <span style="color:#ffcc00;font-weight:bold">Alignment:</span> Neutral (Evil)<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Abilities:</span>
+                           Control someone each night.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Attributes:</span>
+                           You can only control targetable actions such as detection and killing.
+                           You can force people to target themselves.
+                           Your victim will know they are being controlled.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Goal:</span> Survive to see the Town lose the game.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="container">
+                     <img src="Executioner.png" alt="Executioner" class="image">
+                     <div class="overlay">
+                        <div class="text">
+                           <span style="color:#ffcc00;font-weight:bold">Alignment:</span> Neutral (Evil)<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Abilities:</span>
+                           Trick the Town into lynching your target.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Attributes:</span>
+                           If your target is killed at night you will become a Jester.
+                           Your target is always a Town member.<br><br>
+                           <span style="color:#ffcc00;font-weight:bold">Goal:</span> Get your target lynched at any cost.
+                        </div>
+                     </div>
+                  </div>
+                  <div id="playnow">
+                     <a class="btn play" target="_blank" href="http://www.blankmediagames.com/TownOfSalem/">Play Now</a>
+                  </div>
+               </div>
+            </div>
+         </article>
+         <footer class="footgradient">
+         </footer>
+      </div>
+      <script src="Slider.js"></script>	
+   </body>
+</html>
