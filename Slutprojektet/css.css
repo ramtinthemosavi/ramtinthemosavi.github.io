@@ -499,9 +499,6 @@ h1.blackwoods3{
 
 /*Galaxy S5*/
 @media screen and (min-width: 322px) and (max-width: 361px) {
-	body{
-		background-color:red;
-	}
 	.navgradient{
 		display:none;
 	}
@@ -630,9 +627,6 @@ h1.blackwoods3{
 }
 /*Iphone 6*/
 @media screen and (min-width: 361px) and (max-width: 375px) {
-	body{
-		background-color:blue;
-	}
 	.navgradient{
 		display:none;
 	}
@@ -758,9 +752,6 @@ h1.blackwoods3{
 }
 /*Nexus 5X and IPhone 6+*/
 @media screen and (min-width: 376px) and (max-width: 414px){
-	body{
-		background-color:orange;
-	}
 	.navgradient{
 		display:none;
 	}
@@ -893,10 +884,6 @@ h1.blackwoods3{
 }
 /*Ipad*/
 @media screen and (min-width: 414px) and (max-width: 632px){
-
-	body{
-		background-color:green;
-	}
 	.navgradient{
 		display:none;
 	}
@@ -1025,9 +1012,6 @@ h1.blackwoods3{
 	
 }
 @media screen and (min-width: 633px) and (max-width: 947px){
-	body{
-		background-color:purple;
-	}
 	.navgradient{
 		display:none;
 	}
@@ -1155,10 +1139,6 @@ h1.blackwoods3{
 }
 /*Ipad Pro*/	
 @media screen and (min-width: 947px) and (max-width: 1024px){
-		
-	body{
-		background-color:pink;
-	}
 	.navgradient{
 		display:none;
 	}
