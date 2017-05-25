@@ -372,8 +372,12 @@ h1.blackwoods3{
 /*IPhone 5*/
 @media screen and (max-width: 321px){
 	
-	body{
-		background-color:pink;
+	body{   
+	margin:0;
+	background:url(background.jpg) no-repeat center center fixed;
+	height:100%;
+	width: 100%;
+	background-size:100% 100%;
 	}
 	.navgradient{
 		display:none;
@@ -499,6 +503,13 @@ h1.blackwoods3{
 
 /*Galaxy S5*/
 @media screen and (min-width: 322px) and (max-width: 361px) {
+	body{   
+	margin:0;
+	background:url(background.jpg) no-repeat center center fixed;
+	height:100%;
+	width: 100%;
+	background-size:100% 100%;
+	}
 	.navgradient{
 		display:none;
 	}
@@ -627,6 +638,13 @@ h1.blackwoods3{
 }
 /*Iphone 6*/
 @media screen and (min-width: 361px) and (max-width: 375px) {
+	body{   
+	margin:0;
+	background:url(background.jpg) no-repeat center center fixed;
+	height:100%;
+	width: 100%;
+	background-size:100% 100%;
+	}
 	.navgradient{
 		display:none;
 	}
@@ -752,6 +770,13 @@ h1.blackwoods3{
 }
 /*Nexus 5X and IPhone 6+*/
 @media screen and (min-width: 376px) and (max-width: 414px){
+	body{   
+	margin:0;
+	background:url(background.jpg) no-repeat center center fixed;
+	height:100%;
+	width: 100%;
+	background-size:100% 100%;
+	}
 	.navgradient{
 		display:none;
 	}
@@ -884,6 +909,13 @@ h1.blackwoods3{
 }
 /*Ipad*/
 @media screen and (min-width: 414px) and (max-width: 632px){
+	body{   
+	margin:0;
+	background:url(background.jpg) no-repeat center center fixed;
+	height:100%;
+	width: 100%;
+	background-size:100% 100%;
+	}
 	.navgradient{
 		display:none;
 	}
@@ -1012,6 +1044,13 @@ h1.blackwoods3{
 	
 }
 @media screen and (min-width: 633px) and (max-width: 947px){
+	body{   
+	margin:0;
+	background:url(background.jpg) no-repeat center center fixed;
+	height:100%;
+	width: 100%;
+	background-size:100% 100%;
+	}
 	.navgradient{
 		display:none;
 	}
@@ -1139,6 +1178,13 @@ h1.blackwoods3{
 }
 /*Ipad Pro*/	
 @media screen and (min-width: 947px) and (max-width: 1024px){
+	body{   
+	margin:0;
+	background:url(background.jpg) no-repeat center center fixed;
+	height:100%;
+	width: 100%;
+	background-size:100% 100%;
+	}
 	.navgradient{
 		display:none;
 	}
